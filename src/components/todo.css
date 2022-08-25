@@ -1,0 +1,28 @@
+.eachItems {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    background-color: rgb(149, 49, 243);
+    padding: 5px;
+    color: white;
+}
+
+.addItems {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 5px;
+    /* color: white; */
+    /* background-color: rgb(15, 15, 216); */
+}
+
+.Input {
+    border: none;
+    /* background-color: rgb(15, 15, 216); */
+    /* color: white; */
+}
+/* .showItems {
+    display: flex;
+} */
