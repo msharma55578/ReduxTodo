@@ -24,7 +24,8 @@ const TodoReducer = (state = initialData, action) => {
                 list : tempList
             }
         case 'EDIT_TODO':
-            const index = state.list.filter((ele,index)=> {if (ele?.id === action?.payload?.id) return index})
+            let index;
+            state.list.forEach((ele,idx)=> {if (ele?.id === action?.payload?.id) index = idx})
             const tempNewData = {id: action?.payload?.id, data: action?.payload?.data}
             const newList = state.list.splice(index,1,tempNewData);
             return {
